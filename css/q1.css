@@ -1,0 +1,22 @@
+
+h2 {
+  text-align: center;
+  padding: 30px 20px;
+  margin: 30px 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+ul li {
+  display: inline;
+  width: 50px;
+  height:100px;
+  float: left;
+  padding: 50px 20px;
+  margin-left: 10px;
+  border: 1px solid red;
+}
