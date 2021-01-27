@@ -1,11 +1,17 @@
-var elements = document.getElementsByName('q1');
+function culc() {
+  var elements = document.getElementsByName("q1");
 
+  var a = "";
 
-
-for( var a="", i=elements.length; i--;) {
-  if(elements[i].checked) {
-    var a = elements[i].value
-    break;
+  for (var i = 0; i < elements.length; i++) {
+    console.log(elements[i]);
+    if (elements[i].checked) {
+      var a = elements[i].innerHTML();
+      break;
+    }
   }
-  document.write(a);
+  console.log(a);
+  var sample = document.getElementById("aiueo").innerHTML;
+  console.log(sample);
+  document.getElementById("q1write").innerHTML = a;
 }
