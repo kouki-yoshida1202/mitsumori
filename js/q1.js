@@ -141,7 +141,7 @@ function culcq7() {
   document.getElementById("question7").style.display = "none";
   document.getElementById("q7write").innerHTML = q7;
 
-  sum1 = +Number(q7);
+  sum7 = +Number(q7);
   sum();
 }
 
@@ -150,4 +150,91 @@ function sum() {
   var total = sum1 + sum2 + sum3 + sum4 + sum5 + sum6 + sum7;
   console.log(total);
   document.getElementById("sum").innerHTML = total;
+}
+
+function back2() {
+  //表示要素の選択
+  document.getElementById("question1").style.display = "block";
+  document.getElementById("question2").style.display = "none";
+
+  //金額のリセット
+  sum1 = 0;
+  document.getElementById("q1write").innerHTML = 0;
+  total = sum2 + sum3 + sum4 + sum5 + sum6 + sum7;
+  document.getElementById("sum").innerHTML = total;
+
+  for(element of document.getElementsByName("q1")) {
+    element.checked = false;
+  }
+}
+
+function back3() {
+
+  document.getElementById("question2").style.display = "block";
+  document.getElementById("question3").style.display = "none";
+
+  sum2 = 0;
+  document.getElementById("q2write").innerHTML = 0;
+  total = sum1 + sum3 + sum4 + sum5 + sum6 + sum7;
+  document.getElementById("sum").innerHTML = total;
+
+  for(element of document.getElementsByName("q2")) {
+    element.checked = false;
+  }
+}
+function back4() {
+
+  document.getElementById("question3").style.display = "block";
+  document.getElementById("question4").style.display = "none";
+
+  sum3 = 0;
+  document.getElementById("q3write").innerHTML = 0;
+  total = sum1 + sum2 + sum4 + sum5 + sum6 + sum7;
+  document.getElementById("sum").innerHTML = total;
+
+  for(element of document.getElementsByName("q3")) {
+    element.checked = false;
+  }
+}
+function back5() {
+
+  document.getElementById("question4").style.display = "block";
+  document.getElementById("question5").style.display = "none";
+
+  sum4 = 0;
+  document.getElementById("q4write").innerHTML = 0;
+  total = sum1 + sum2 + sum3 + sum5 + sum6 + sum7;
+  document.getElementById("sum").innerHTML = total;
+
+  for(element of document.getElementsByName("q4")) {
+    element.checked = false;
+  }
+}
+function back6() {
+
+  document.getElementById("question5").style.display = "block";
+  document.getElementById("question6").style.display = "none";
+
+  sum5 = 0;
+  document.getElementById("q5write").innerHTML = 0;
+  total = sum1 + sum2 + sum3 + sum4 + sum6 + sum7;
+  document.getElementById("sum").innerHTML = total;
+
+  for(element of document.getElementsByName("q5")) {
+    element.checked = false;
+  }
+}
+function back7() {
+
+  document.getElementById("question6").style.display = "block";
+  document.getElementById("question7").style.display = "none";
+
+  sum6 = 0;
+  document.getElementById("q6write").innerHTML = 0;
+  total = sum1 + sum2 + sum3 + sum4 + sum5 + sum7;
+  document.getElementById("sum").innerHTML = total;
+
+  for(element of document.getElementsByName("q6")) {
+    element.checked = false;
+  }
 }
