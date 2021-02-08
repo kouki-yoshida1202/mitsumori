@@ -20,3 +20,10 @@ ul li {
   margin-left: 10px;
   border: 1px solid red;
 }
+
+.mitumori {
+  display: none;
+}
+#question1 {
+  display: block;
+}
