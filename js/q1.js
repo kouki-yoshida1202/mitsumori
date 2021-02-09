@@ -5,6 +5,7 @@ var sum4 = 0;
 var sum5 = 0;
 var sum6 = 0;
 var sum7 = 0;
+let total = 0;
 
 function start() {
   var newstyle = document.createElement("style");
@@ -179,17 +180,16 @@ function culcq7() {
     }
   }
 
-  document.getElementById("question7").style.display = "none";
   document.getElementById("q7write").innerHTML = q7;
 
   sum7 = +Number(q7);
   sum();
+  location.href ="../html/result.html";
 }
 
 function sum() {
   console.log(sum1, sum2, sum3, sum4, sum5, sum6, sum7);
-  var total = sum1 + sum2 + sum3 + sum4 + sum5 + sum6 + sum7;
-  console.log(total);
+  total = sum1 + sum2 + sum3 + sum4 + sum5 + sum6 + sum7;
   document.getElementById("sum").innerHTML = total;
 }
 
