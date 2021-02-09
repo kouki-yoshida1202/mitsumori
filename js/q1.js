@@ -6,6 +6,17 @@ var sum5 = 0;
 var sum6 = 0;
 var sum7 = 0;
 
+function start() {
+  var newstyle = document.createElement("style");
+  newstyle.type="text/css";
+  newstyle.innerText = '#question1, #total{opacity:0} #question1, #total{animation-name: fadeIn} #question1, #total{animation-duration:2s} #question1, #total{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
+  document.getElementsByTagName("body").item(0).appendChild(newstyle);
+  document.getElementById("start").style.display = "none";
+  document.getElementById("question1").style.display = "block";
+  document.getElementById("total").style.display = "block";
+
+}
+
 function culcq1() {
   var elements = document.getElementsByName("q1");
 
@@ -17,6 +28,11 @@ function culcq1() {
       break;
     }
   }
+
+  newstyle = document.createElement("style");
+  newstyle.type="text/css";
+  newstyle.innerText = '#question2{opacity:0} #question2{animation-name: fadeIn} #question2{animation-duration:2s} #question2{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
+  document.getElementsByTagName("body").item(0).appendChild(newstyle);
 
   document.getElementById("question1").style.display = "none";
   document.getElementById("question2").style.display = "block";
@@ -38,6 +54,11 @@ function culcq2() {
     }
   }
 
+  newstyle = document.createElement("style");
+  newstyle.type="text/css";
+  newstyle.innerText = '#question3{opacity:0} #question3{animation-name: fadeIn} #question3{animation-duration:2s} #question3{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
+  document.getElementsByTagName("body").item(0).appendChild(newstyle);
+
   document.getElementById("question2").style.display = "none";
   document.getElementById("question3").style.display = "block";
   document.getElementById("q2write").innerHTML = q2;
@@ -57,6 +78,11 @@ function culcq3() {
       break;
     }
   }
+
+  newstyle = document.createElement("style");
+  newstyle.type="text/css";
+  newstyle.innerText = '#question4, {opacity:0} #question4 {animation-name: fadeIn} #question4 {animation-duration:2s} #question4 {animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
+  document.getElementsByTagName("body").item(0).appendChild(newstyle);
 
   document.getElementById("question3").style.display = "none";
   document.getElementById("question4").style.display = "block";
@@ -78,6 +104,11 @@ function culcq4() {
     }
   }
 
+  newstyle = document.createElement("style");
+  newstyle.type="text/css";
+  newstyle.innerText = '#question5 {opacity:0} #question5 {animation-name: fadeIn} #question5 {animation-duration:2s} #question5 {animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
+  document.getElementsByTagName("body").item(0).appendChild(newstyle);
+
   document.getElementById("question4").style.display = "none";
   document.getElementById("question5").style.display = "block";
   document.getElementById("q4write").innerHTML = q4;
@@ -98,6 +129,11 @@ function culcq5() {
     }
   }
 
+  newstyle = document.createElement("style");
+  newstyle.type="text/css";
+  newstyle.innerText = '#question6 {opacity:0} #question6 {animation-name: fadeIn} #question6 {animation-duration:2s} #question6 {animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
+  document.getElementsByTagName("body").item(0).appendChild(newstyle);
+
   document.getElementById("question5").style.display = "none";
   document.getElementById("question6").style.display = "block";
   document.getElementById("q5write").innerHTML = q5;
@@ -117,6 +153,11 @@ function culcq6() {
       break;
     }
   }
+
+  newstyle = document.createElement("style");
+  newstyle.type="text/css";
+  newstyle.innerText = '#question7{opacity:0} #question7{animation-name: fadeIn} #question7{animation-duration:2s} #question7{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
+  document.getElementsByTagName("body").item(0).appendChild(newstyle);
 
   document.getElementById("question6").style.display = "none";
   document.getElementById("question7").style.display = "block";

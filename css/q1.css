@@ -24,6 +24,6 @@ ul li {
 .mitumori {
   display: none;
 }
-#question1 {
-  display: block;
+#total {
+  display: none;
 }
