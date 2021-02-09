@@ -184,7 +184,7 @@ function culcq7() {
 
   sum7 = +Number(q7);
   sum();
-  location.href ="../html/result.html";
+  location.href = "../html/result.html?total=" + total;
 }
 
 function sum() {
