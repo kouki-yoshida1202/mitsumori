@@ -2,257 +2,249 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../css/q1.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>質問１</title>
   </head>
   <body>
     <h1 class="h1" name="h1">Simulator</h1>
-    <div id="start">
-      <button type="button" name="button" onclick="start()">Start!</button>
+    <div id="start" class="text-center">
+      <button class="btn btn-primary" type="button" name="button" onclick="start()">Start!</button>
     </div>
+
+
     <!--質問1-->
     <div id="question1" class="mitumori">
       <h2>1.どんなホームページを作りたいですか？</h2>
-        <ul>
-          <li>
-            <input
-              type="radio"
-              name="q1"
-              value="1"
-              onclick="culcq1()"
-            />コーポレートサイト
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="q1"
-              value="2"
-              onclick="culcq1()"
-            />サービスサイト
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="q1"
-              value="3"
-              onclick="culcq1()"
-            />ポータルサイト
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="q1"
-              value="4"
-              onclick="culcq1()"
-            />マッチングサイト
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="q1"
-              value="5"
-              onclick="culcq1()"
-            />ECサイト
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="q1"
-              value="6"
-              onclick="culcq1()"
-            />ランディングページ
-          </li>
-        </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+              <label class="btn btn-outline-info rounded">
+                <input type="radio" name="q1" value="1" onclick="culcq1()">
+                  コーポレート<br>サイト
+              </label>
+          </div>
+          <div class="col-md-2">
+              <label class="btn btn-outline-info rounded">
+                <input type="radio" name="q1" value="2" onclick="culcq1()">サービス<br>サイト
+              </label>
+          </div>
+          <div class="col-md-2">
+              <label class="btn btn-outline-info rounded">
+                <input type="radio" name="q1" value="3" onclick="culcq1()">ポータル<br>サイト
+              </label>
+          </div>
+          <div class="col-md-2">
+              <label class="btn btn-outline-info rounded">
+                <input type="radio" name="q1" value="4" onclick="culcq1()">マッチング<br>サイト
+              </label>
+          </div>
+          <div class="col-md-2">
+              <label class="btn btn-outline-info rounded">
+                <input type="radio" name="q1" value="5" onclick="culcq1()">ECサイト
+              </label>
+          </div>
+          <div class="col-md-2">
+              <label class="btn btn-outline-info rounded">
+                <input type="radio" name="q1" value="6" onclick="culcq1()">ランディング<br>ページ
+              </label>
+          </div>
+        </div>
+      </div>
     </div>
+
+
 
     <!--質問2-->
     <div id="question2" class="mitumori">
       <h2>2.どのくらいページを作成しますか？</h2>
-      <ul>
-        <li>コーポレートサイト</li>
-        <li>
-          <input
-            type="radio"
-            name="q2"
-            value="1"
-            onclick="culcq2()"
-          />サービスサイト
-        </li>
-        <li>
-          <input
-            type="radio"
-            name="q2"
-            value="2"
-            onclick="culcq2()"
-          />ポータルサイト
-        </li>
-        <li>
-          <input
-            type="radio"
-            name="q2"
-            value="3"
-            onclick="culcq2()"
-          />マッチングサイト
-        </li>
-        <li>
-          <input type="radio" name="q2" value="4" onclick="culcq2()" />ECサイト
-        </li>
-        <li>
-          <input
-            type="radio"
-            name="q2"
-            value="5"
-            onclick="culcq2()"
-          />ランディングページ
-        </li>
-      </ul>
-
-      <button onclick="back2()">１つ前に戻る</button>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q2" value="1" onclick="culcq2()">1~2
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q2" value="2" onclick="culcq2()">3~4
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q2" value="3" onclick="culcq2()">5~6
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q2" value="4" onclick="culcq2()">7~8
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q2" value="5" onclick="culcq2()">9~10
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q2" value="6" onclick="culcq2()">11~12
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button onclick="back2()" class="btn btn-outline-warning">１つ前に戻る</button>
+      </div>
     </div>
+
+
 
     <!--質問3-->
     <div id="question3" class="mitumori">
       <h2>3.ログイン機能は必要ですか？</h2>
-        <ul>
-          <li>
-            <input
-              type="radio"
-              name="q3"
-              value="1"
-              onclick="culcq3()"
-            />必要ない
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="q3"
-              value="2"
-              onclick="culcq3()"
-            />SNS
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="q3"
-              value="3"
-              onclick="culcq3()"
-            />メールアドレス
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="q3"
-              value="4"
-              onclick="culcq3()"
-            />わからない
-          </li>
-        </ul>
-        <button onclick="back3()">1つ前に戻る</button>
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-2"></div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q3" value="1" onclick="culcq3()">必要ない
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q3" value="2" onclick="culcq3()">SNS
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q3" value="3" onclick="culcq3()">メール<br>アドレス
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q3" value="4" onclick="culcq3()">わからない
+            </label>
+          </div>
+          <div class="offset-md-2"></div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button onclick="back3()" class="btn btn-outline-warning">1つ前に戻る</button>
+      </div>
     </div>
+
+
 
     <!--質問4-->
     <div id="question4" class="mitumori">
       <h2>4.会員登録・顧客管理を行いますか？</h2>
-        <ul>
-          <li>
-            <input
-              type="radio"
-              name="q4"
-              value="1"
-              onclick="culcq4()"
-            />いいえ
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="q4"
-              value="2"
-              onclick="culcq4()"
-            />はい
-          </li>
-        </ul>
-        <button onclick="back4()">1つ前に戻る</button>
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-4"></div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q4" value="1" onclick="culcq4()">いいえ
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q4" value="2" onclick="culcq4()">はい
+            </label>
+          </div>
+          <div class="offset-md-4"></div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button onclick="back4()" class="btn btn-outline-warning">1つ前に戻る</button>
+      </div>
     </div>
+
+
 
     <!--質問5-->
     <div id="question5" class="mitumori">
       <h2>5.決済できる機能は必要ですか？</h2>
-        <ul>
-          <li>
-            <input
-              type="radio"
-              name="q5"
-              value="1"
-              onclick="culcq5()"
-            />いいえ
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="q5"
-              value="2"
-              onclick="culcq5()"
-            />はい
-          </li>
-        </ul>
-        <button onclick="back5()">1つ前に戻る</button>
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-4"></div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q5" value="1" onclick="culcq5()">いいえ
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q5" value="2" onclick="culcq5()">はい
+            </label>
+          </div>
+          <div class="offset-md-4"></div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button onclick="back5()" class="btn btn-outline-warning">1つ前に戻る</button>
+      </div>
     </div>
+
+
 
     <!--質問6-->
     <div id="question6" class="mitumori">
       <h2>6.検索する機能は必要ですか？</h2>
-        <ul>
-          <li>
-            <input
-              type="radio"
-              name="q6"
-              value="1"
-              onclick="culcq6()"
-            />いいえ
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="q6"
-              value="2"
-              onclick="culcq6()"
-            />はい(簡易)
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="q6"
-              value="3"
-              onclick="culcq6()"
-            />はい(高度)
-          </li>
-        </ul>
-        <button onclick="back6()">1つ前に戻る</button>
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-3"></div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info">
+              <input type="radio" name="q6" value="1" onclick="culcq6()">いいえ
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info">
+              <input type="radio" name="q6" value="2" onclick="culcq6()">はい(簡易)
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info">
+              <input type="radio" name="q6" value="3" onclick="culcq6()">はい(高度)
+            </label>
+          </div>
+          <div class="offset-md-3"></div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button onclick="back6()" class="btn btn-outline-warning">1つ前に戻る</button>
+      </div>
     </div>
+
+
 
     <!--質問7-->
     <div id="question7" class="mitumori">
       <h2>7.更新をラクにする機能を導入しますか？</h2>
-        <ul>
-          <li>
-            <input
-              type="radio"
-              name="q7"
-              value="1"
-              onclick="culcq7()"
-            />はい
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="q7"
-              value="2"
-              onclick="culcq7()"
-            />いいえ
-          </li>
-        </ul>
-        <button onclick="back7()">1つ前に戻る</button>
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-4"></div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info">
+              <input type="radio" name="q7" value="1" onclick="culcq7()">はい
+            </label>
+          </div>
+          <div class="col-md-2">
+            <label class="btn btn-outline-info">
+              <input type="radio" name="q7" value="2" onclick="culcq7()">いいえ
+            </label>
+          </div>
+          <div class="offset-md-4"></div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button onclick="back7()" class="btn btn-outline-warning">1つ前に戻る</button>
+      </div>
     </div>
+
+
 
     <div id="total">
       <p id="q1write">0</p>
@@ -265,6 +257,12 @@
       <p id="sum" name="sum">0</p>
     </div>
 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../js/q1.js"></script>
   </body>
 </html>
