@@ -46,3 +46,9 @@ input {
 #total {
   display: none;
 }
+
+footer {
+  text-align: center;
+  height: 50px;
+  background-color: #B2EBCC;
+}
