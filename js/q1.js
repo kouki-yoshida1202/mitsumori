@@ -14,7 +14,7 @@ function start() {
   document.getElementsByTagName("body").item(0).appendChild(newstyle);
   document.getElementById("start").style.display = "none";
   document.getElementById("question1").style.display = "block";
-  document.getElementById("total").style.display = "block";
+  document.getElementById("sum").style.display = "block";
 
 }
 

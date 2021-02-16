@@ -1,12 +1,17 @@
 h1 {
   text-align: center;
+  margin: 50px 0px 100px 0px;
+  border-bottom: 2px solid black;
 }
 p {
+  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 60px;
-  border: 1px solid black;
+  width: 250px;
+  height: 80px;
+  margin-left: 100px;
+  border:3px double #F55427;
+  background-color: #FFE9E3;
   text-align: center;
 }
