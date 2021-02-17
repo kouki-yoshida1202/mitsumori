@@ -1,17 +1,102 @@
-h1 {
+body h1 {
+  letter-spacing: 5px;
+  font-size: 30px;
+  font-weight: bold;
   text-align: center;
-  margin: 50px 0px 100px 0px;
+  margin: 50px 0px 50px 0px;
+}
+h1 span {
   border-bottom: 2px solid black;
 }
-p {
+
+div.contentA div.col-md-4 {
+  letter-spacing: 3px;
   font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  height: 80px;
-  margin-left: 100px;
+  width: 200px;
+  height: 120px;
+  margin-top: 50px;
+  padding: 5px 10px;
   border:3px double #F55427;
-  background-color: #FFE9E3;
   text-align: center;
+}
+div.contentA div.col-md-4 span#resultText {
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+
+div.contentA div.col-sm-4 {
+  letter-spacing: 3px;
+  font-size: 30px;
+  width: 200px;
+  height: 120px;
+  margin-top: 50px;
+  padding: 5px 10px;
+  border:3px double #F55427;
+  text-align: center;
+}
+div.contentA div.col-sm-4 span#resultText {
+  font-size: 15px;
+}
+div.contentA div.col-4 {
+  font-size: 30px;
+  width: 200px;
+  height: 120px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 5px 10px;
+  border:3px double #F55427;
+  text-align: center;
+}
+div.contentA div.col-4 span#resultText {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 510px) {
+
+  body h1 {
+    font-size: 25px;
+  }
+  div.contentA div.col-4 {
+    font-size: 20px;
+    height: 100px;
+  }
+  div.contentA div.col-4 span#resultText {
+    font-size: 8px;
+  }
+
+}
+
+div.contentB div.col-md-4 {
+  text-align: center;
+}
+div.contentB div.col-sm-4 {
+  text-align: center;
+}
+div.contentB div.col-4 {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+  div.contentB div.col-sm-4 button {
+    padding:8px 14px;
+    w
+  }
+  div.contentB div.col-sm-4 button a {
+    font-size: 10px;
+  }
+}
+
+div.contentB button {
+  background-color: #16406b;
+  border: 1px solid #16406b;
+  border-radius: 40px;
+  padding:16px 28px;
+  margin-top: 50px;
+}
+div.contentB button a {
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 3px;
 }

@@ -117,15 +117,24 @@ footer {
   }
 
 
+
 }
+
+@media screen and (max-width: 992px) {
+  label.btn {
+    font-size: 7px;
+  }
+  label {
+    width: 100px;
+    height: 130px;
+  }
+}
+
 
 @media screen and (max-width:350px) {
 
   label {
-    width: 110px;
+    width: 100px;
     height: 130px;
-  }
-  div.col-4.offset-2 {
-    margin: 0 0 0 40px;
   }
 }
