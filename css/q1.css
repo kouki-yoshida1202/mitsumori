@@ -1,29 +1,68 @@
-#start {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap');
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+div#start {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+div#start.text-center {
   background-color: #FAD220;
+  margin: 0px 0px 0px 0px;
+
 }
 #start h1 {
+  font-family: 'Noto Sans JP', sans-serif;
   padding-bottom: 200px;
   margin: 0px;
+  text-align: left;
 }
-#start p {
+#start div.col-md-10 p.main {
+  margin: 0 0 0 0;
   padding-top: 100px;
-  font-size: 40px;
+  font-size: 48px;
+  text-align: left;
+}
+#start div.container img {
+  position: absolute;
+  right: 100px;
+  top: 330px;
+}
+#start div.col-md-10 p.sub {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: left;
+
+}
+#start div.container div.row div.col-md-10 {
+  padding: 0px 0px;
+}
+#start div.container div.row div.col-md-10 {
+  text-align: left;
 }
 #start button.btn {
   color: black;
-  padding-bottom: 10px;
-  font-size: 30px;
-  background-color: #F5F395;
+  padding: 10px 25px;
+  font-size: 18px;
+  background-color: #ffea81;
   border: 2px solid black;
   border-radius: 30px;
+}
+#start button.btn img {
+  margin-left: 10px;
+  padding-bottom: 3px;
 }
 #start button.btn:hover {
   background-color: #F55427;
 }
+div.mitumori div.img {
+  text-align: center;
+  margin:100px 0 10px 0;
+}
 div.mitumori h2 {
   text-align: center;
   padding: 30px 20px;
-  margin:100px 0px 50px 0px;
+  margin:10px 0px 50px 0px;
 }
 div.text-center {
   margin: 30px 0px 0px 0px;
@@ -54,6 +93,14 @@ ul li {
 */
 .mitumori {
   display: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+}
+div.mitumori div.page p {
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 }
@@ -70,6 +117,10 @@ label {
 }
 label.btn {
   border: 3px solid #17A2B8;
+  font-size: 14px;
+}
+label.btn img {
+  margin-top: 30px;
 }
 input {
   opacity: 0;
@@ -83,22 +134,33 @@ input {
 footer {
   text-align: center;
   background-color: #61615F;
+  padding: 20px 0px;
 }
 
 /*スマホ対応*/
-@media screen and (max-width:767px) {
+@media screen and (max-width: 992px) {
+  label.btn {
+    font-size: 7px;
+  }
+  label {
+    width: 100px;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width:768px) {
   #start h1 {
     padding-top: 100px;
     padding-bottom: 100px;
   }
-  #start p {
+  #start div.container div.row div.col-sm-10 p.main {
     padding-top: 30px;
-    font-size: 20px;
+    font-size: 35px;
   }
-  #start button.btn {
+  #start div.container div.row button.btn {
     font-size: 15px;
   }
-  div.mitumori h2 {
+  #start div.container div.row div.mitumori h2 {
     font-size: 20px;
     margin: 70px 0px 30px 0px;
   }
@@ -115,18 +177,15 @@ footer {
   div.mitumori {
     margin-bottom: 50px;
   }
-
-
-
 }
 
-@media screen and (max-width: 992px) {
-  label.btn {
-    font-size: 7px;
+@media screen and (max-width:576px) {
+  #start div.container div.row div.col-8 p.main {
+    text-align: center;
+    font-size: 20px;
   }
-  label {
-    width: 100px;
-    height: 130px;
+  #start div.container div.row div.col-8 {
+    text-align: center;
   }
 }
 

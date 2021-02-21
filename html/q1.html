@@ -12,30 +12,62 @@
 
     <div id="start" class="text-center">
           <h1 class="h1" name="h1">Simulator</h1>
-          <p>ホームページ制作<br>
-          見積もりシミュレーター</p>
-          <button class="btn" type="button" name="button" onclick="start()">Start!</button>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 offset-md-0 col-sm-10 offset-sm-0 col-8 offset-2">
+                <p class="main">ホームページ制作<br>
+                見積もりシミュレーター</p>
+              </div>
+              <div class="offset-md-2 offset-sm-2 offset-2"></div>
+            </div>
+
+            <img src="../images/undraw_Relaxing_at_home_re_mror.png" alt="" width="400px" height="300px">
+
+            <div class="row">
+              <div class="col-md-10 offset-md-0 col-sm-10 offset-sm-0 col-8 offset-2">
+                <p class="sub">10個の質問に答えるだけで大まかな制作費用が分かる！<br>
+                ホームページ制作費用を自動で瞬時に見積もるシミュレーター</p>
+                <div class="offset-md-2 offset-sm-2 offset-2"></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-10 offset-md-0 col-sm-10 offset-sm-0 col-8 offset-2">
+                <button class="btn" type="button" name="button" onclick="start()">START<img src="../images/circle-right.png" alt="" width="23px" height="25px"></button>
+              </div>
+              <div class="offset-md-2 offset-sm-2 offset-2"></div>
+            </div>
+          </div>
+
+
     </div>
 
 
     <!--質問1-->
     <div id="question1" class="mitumori">
-      <h2>1.どんなホームページを作りたいですか？</h2>
+      <div class="img">
+        <img src="../images/f_f_business_30_s512_f_business_30_0nbg.png" alt="" width="150px" height="130px">
+      </div>
+      <h2>1.アプリの制作範囲をお選びください。</h2>
       <div class="container">
         <div class="row">
 
-          <div class="col-md-2 offset-md-0 col-sm-4 offset-sm-0 col-5 offset-1">
+          <div class="col-md-3 offset-md-3 col-sm-3 offset-sm-3 col-5 offset-1">
               <label class="btn btn-outline-info rounded">
-                <input type="radio" name="q1" value="1" onclick="culcq1()">コーポレート<br>サイト
+                <input type="radio" name="q1" value="0" onclick="culcq1()">スマホアプリ<br>のみ<br>(iOS,Android<br>両方)<br>
+                <img src="../images/f_f_business_31_s512_f_business_31_0nbg.png" alt="" width="30px" height="60px">
               </label>
           </div>
-          <div class="col-md-2 col-sm-4 col-5">
+          <div class="col-md-3 col-sm-3 col-5">
               <label class="btn btn-outline-info rounded">
-                <input type="radio" name="q1" value="2" onclick="culcq1()">サービス<br>サイト
+                <input type="radio" name="q1" value="15" onclick="culcq1()">スマホアプリ<br>＆<br>Webアプリ<br>
+                <img src="../images/f_f_business_30_s512_f_business_30_0nbg-new.png" alt="" width="60px" height="60px">
               </label>
           </div>
-          <div class=" offset-md-0 offset-sm-0 offset-1"></div>
+          <div class=" offset-md-3 offset-sm-3 offset-1"></div>
 
+
+          <!--
           <div class="col-md-2 offset-md-0 col-sm-4 offset-sm-0 col-5 offset-1">
               <label class="btn btn-outline-info rounded">
                 <input type="radio" name="q1" value="3" onclick="culcq1()">ポータル<br>サイト
@@ -60,7 +92,11 @@
               </label>
           </div>
           <div class="offset-md-0 offset-sm-0 offset-1"></div>
+        -->
         </div>
+      </div>
+      <div class="page">
+        <p>1/9</p>
       </div>
     </div>
 
@@ -68,20 +104,24 @@
 
     <!--質問2-->
     <div id="question2" class="mitumori">
-      <h2>2.どのくらいページを作成しますか？</h2>
+      <div class="img">
+        <img src="../images/f_f_business_94_s512_f_business_94_1nbg.png" alt="" width="120px" height="120px">
+      </div>
+      <h2>2.会員管理が必要なアプリですか？</h2>
       <div class="container">
         <div class="row">
-          <div class="col-md-2 offset-md-0 col-sm-4 offset-sm-0 col-5 offset-1">
+          <div class="col-md-3 offset-md-3 col-sm-3 offset-sm-3 col-5 offset-1">
             <label class="btn btn-outline-info rounded">
-              <input type="radio" name="q2" value="1" onclick="culcq2()">1~2
+              <input type="radio" name="q2" value="10" onclick="culcq2()">はい
             </label>
           </div>
-          <div class="col-md-2 col-sm-4 col-5">
+          <div class="col-md-3 col-sm-3 col-5">
             <label class="btn btn-outline-info rounded">
-              <input type="radio" name="q2" value="2" onclick="culcq2()">3~4
+              <input type="radio" name="q2" value="0" onclick="culcq2()">いいえ
             </label>
           </div>
-          <div class="offset-md-0 offset-sm-0 offset-1"></div>
+          <div class="offset-md-3 offset-sm-3 offset-1"></div>
+          <!--
           <div class="col-md-2 offset-md-0 col-sm-4 offset-sm-0 col-5 offset-1">
             <label class="btn btn-outline-info rounded">
               <input type="radio" name="q2" value="3" onclick="culcq2()">5~6
@@ -104,10 +144,14 @@
             </label>
           </div>
           <div class="offset-md-0 offset-sm-0 offset-1"></div>
+        -->
         </div>
       </div>
       <div class="text-center">
         <button onclick="back2()" class="btn">１つ前に戻る</button>
+      </div>
+      <div class="page">
+        <p>2/9</p>
       </div>
     </div>
 
@@ -115,29 +159,36 @@
 
     <!--質問3-->
     <div id="question3" class="mitumori">
+      <div class="img">
+        <img src="../images/f_f_object_45_s512_f_object_45_0nbg.png" alt="" width="120px" height="120px">
+      </div>
       <h2>3.ログイン機能は必要ですか？</h2>
       <div class="container">
         <div class="row">
 
           <div class="col-md-2 offset-md-2 col-sm-3 offset-sm-0 col-5 offset-1">
             <label class="btn btn-outline-info rounded">
-              <input type="radio" name="q3" value="1" onclick="culcq3()">必要ない
+              <input type="radio" name="q3" value="3" onclick="culcq3()">メールアドレ<br>スのみ<br>
+              <img src="../images/f_f_business_10_s512_f_business_10_0nbg.png" alt="" width="60px" height="60px">
             </label>
           </div>
           <div class="col-md-2 col-sm-3 col-5">
             <label class="btn btn-outline-info rounded">
-              <input type="radio" name="q3" value="2" onclick="culcq3()">SNS
+              <input type="radio" name="q3" value="8" onclick="culcq3()">SNSアカウン<br>トのみ<br>
+              <img src="../images/f_f_business_5_s512_f_business_5_2nbg.png" alt="" width="60px" height="60px">
             </label>
           </div>
           <div class="offset-md-0 offset-sm-0 offset-1"></div>
           <div class="col-md-2 offset-md-0 col-sm-3 offset-sm-0 col-5 offset-1">
             <label class="btn btn-outline-info rounded">
-              <input type="radio" name="q3" value="3" onclick="culcq3()">メール<br>アドレス
+              <input type="radio" name="q3" value="10" onclick="culcq3()">メルアド＆S<br>NSアカウント<br>
+              <img src="../images/f_f_business_10_s512_f_business_10_0nbg-new.png" alt="" width="60px" height="60px">
             </label>
           </div>
           <div class="col-md-2 col-sm-3 col-5">
             <label class="btn btn-outline-info rounded">
-              <input type="radio" name="q3" value="4" onclick="culcq3()">わからない
+              <input type="radio" name="q3" value="0" onclick="culcq3()">必要ない<br>(相談したい)<br>
+              <img src="../images/f_f_business_81_s512_f_business_81_0nbg.png" alt="" width="60px" height="40px">
             </label>
           </div>
           <div class="offset-md-2 offset-sm-0 offset-1"></div>
@@ -146,30 +197,53 @@
       <div class="text-center">
         <button onclick="back3()" class="btn">1つ前に戻る</button>
       </div>
+      <div class="page">
+        <p>3/9</p>
+      </div>
     </div>
 
 
 
     <!--質問4-->
     <div id="question4" class="mitumori">
-      <h2>4.会員登録・顧客管理を行いますか？</h2>
+      <div class="img">
+        <img src="../images/f_f_event_37_s512_f_event_37_0nbg.png" alt="" width="160px" height="120px">
+      </div>
+      <h2>4.アプリで決済しますか？</h2>
       <div class="container">
         <div class="row">
-          <div class="col-md-3 offset-md-3 col-sm-3 offset-sm-3 col-5 offset-1">
+          <div class="col-md-2 offset-md-2 col-sm-3 offset-sm-0 col-5 offset-1">
             <label class="btn btn-outline-info rounded">
-              <input type="radio" name="q4" value="1" onclick="culcq4()">いいえ
+              <input type="radio" name="q4" value="15" onclick="culcq4()">カード決済<br>
+              <img src="../images/f_f_business_50_s512_f_business_50_0nbg.png" alt="" width="60px" height="40px">
             </label>
           </div>
-          <div class="col-md-3 col-sm-3 col-5">
+          <div class="col-md-2 col-sm-3 col-5">
             <label class="btn btn-outline-info rounded">
-              <input type="radio" name="q4" value="2" onclick="culcq4()">はい
+              <input type="radio" name="q4" value="25" onclick="culcq4()">アプリ内課金<br>
+              <img src="../images/f_f_object_96_s512_f_object_96_0nbg (1).png" alt="" width="60px" height="60px">
             </label>
           </div>
-          <div class="offset-md-3 offset-sm-3 offset-1"></div>
+          <div class="offset-md-0 offset-sm-0 offset-1"></div>
+          <div class="col-md-2 offset-md-0 col-sm-3 offset-sm-0 col-5 offset-1">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q4" value="0" onclick="culcq4()">相談したい<br>
+              <img src="../images/f_f_business_81_s512_f_business_81_0nbg.png" alt="" width="60px" height="40px">
+            </label>
+          </div>
+          <div class="col-md-2 col-sm-3 col-5">
+            <label class="btn btn-outline-info rounded">
+              <input type="radio" name="q4" value="0" onclick="culcq4()">決済しない
+            </label>
+          </div>
+          <div class="offset-md-2 offset-sm-0 offset-1"></div>
         </div>
       </div>
       <div class="text-center">
         <button onclick="back4()" class="btn">1つ前に戻る</button>
+      </div>
+      <div class="page">
+        <p>4/9</p>
       </div>
     </div>
 
@@ -177,17 +251,20 @@
 
     <!--質問5-->
     <div id="question5" class="mitumori">
-      <h2>5.決済できる機能は必要ですか？</h2>
+      <div class="img">
+        <img src="../images/f_f_event_45_s512_f_event_45_0nbg.png" alt="" width="160px" height="120px">
+      </div>
+      <h2>5.アプリ内に広告を付けますか？</h2>
       <div class="container">
         <div class="row">
           <div class="col-md-3 offset-md-3 col-sm-3 offset-sm-3 col-5 offset-1">
             <label class="btn btn-outline-info rounded">
-              <input type="radio" name="q5" value="1" onclick="culcq5()">いいえ
+              <input type="radio" name="q5" value="15" onclick="culcq5()">はい
             </label>
           </div>
           <div class="col-md-3 col-sm-3 col-5">
             <label class="btn btn-outline-info rounded">
-              <input type="radio" name="q5" value="2" onclick="culcq5()">はい
+              <input type="radio" name="q5" value="0" onclick="culcq5()">いいえ
             </label>
           </div>
           <div class="offset-md-3 offset-sm-3 offset-1"></div>
@@ -196,29 +273,37 @@
       <div class="text-center">
         <button onclick="back5()" class="btn">1つ前に戻る</button>
       </div>
+      <div class="page">
+        <p>5/9</p>
+      </div>
     </div>
 
 
 
     <!--質問6-->
     <div id="question6" class="mitumori">
-      <h2>6.検索する機能は必要ですか？</h2>
+      <div class="img">
+        <img src="../images/f_f_object_26_s512_f_object_26_1nbg.png" alt="" width="120px" height="120px">
+      </div>
+      <h2>6.デザインの制作を依頼しますか？</h2>
       <div class="container">
         <div class="row">
           <div class="col-md-2 offset-md-2 col-sm-2 offset-sm-2 col-5 offset-1">
             <label class="btn btn-outline-info">
-              <input type="radio" name="q6" value="1" onclick="culcq6()">いいえ
+              <input type="radio" name="q6" value="5" onclick="culcq6()">参考デザイン<br>やアプリが<br>ある<br>
+              <img src="../images/f_f_business_31_s512_f_business_31_0nbg.png" alt="" width="40px" height="60px">
             </label>
           </div>
           <div class="col-md-2 offset-md-1 col-sm-2 offset-sm-1 col-5 offset-0">
             <label class="btn btn-outline-info">
-              <input type="radio" name="q6" value="2" onclick="culcq6()">はい(簡易)
+              <input type="radio" name="q6" value="15" onclick="culcq6()">依頼したい<br>
+              <img src="../images/f_f_business_81_s512_f_business_81_0nbg.png" alt="" width="60px" height="40px">
             </label>
           </div>
           <div class="offset-md-0 offset-sm-0 offset-1"></div>
           <div class="col-md-2 offset-md-1 col-sm-2 offset-sm-1 col-5 offset-1">
             <label class="btn btn-outline-info">
-              <input type="radio" name="q6" value="3" onclick="culcq6()">はい(高度)
+              <input type="radio" name="q6" value="0" onclick="culcq6()">自分たちで<br>行う
             </label>
           </div>
           <div class="offset-md-2 offset-sm-3 offset-6"></div>
@@ -227,23 +312,29 @@
       <div class="text-center">
         <button onclick="back6()" class="btn">1つ前に戻る</button>
       </div>
+      <div class="page">
+        <p>6/9</p>
+      </div>
     </div>
 
 
 
     <!--質問7-->
     <div id="question7" class="mitumori">
-      <h2>7.更新をラクにする機能を導入しますか？</h2>
+      <div class="img">
+        <img src="../images/f_f_business_45_s512_f_business_45_0nbg.png" alt="" width="120px" height="120px">
+      </div>
+      <h2>7.ユーザー同士のチャット機能はありますか？</h2>
       <div class="container">
         <div class="row">
           <div class="col-md-3 offset-md-3 col-sm-3 offset-sm-3 col-5 offset-1">
             <label class="btn btn-outline-info">
-              <input type="radio" name="q7" value="1" onclick="culcq7()">はい
+              <input type="radio" name="q7" value="15" onclick="culcq7()">はい
             </label>
           </div>
           <div class="col-md-3 col-sm-3 col-5">
             <label class="btn btn-outline-info">
-              <input type="radio" name="q7" value="2" onclick="culcq7()">いいえ
+              <input type="radio" name="q7" value="0" onclick="culcq7()">いいえ
             </label>
           </div>
           <div class="offset-md-3 offset-sm-3 offset-1"></div>
@@ -251,6 +342,73 @@
       </div>
       <div class="text-center">
         <button onclick="back7()" class="btn">1つ前に戻る</button>
+      </div>
+      <div class="page">
+        <p>7/9</p>
+      </div>
+    </div>
+
+    <!--質問8-->
+    <div id="question8" class="mitumori">
+      <div class="img">
+        <img src="../images/f_f_object_78_s512_f_object_78_1nbg.png" alt="" width="120px" height="120px">
+      </div>
+      <h2>8.アプリの通知機能を搭載しますか？</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 offset-md-3 col-sm-3 offset-sm-3 col-5 offset-1">
+            <label class="btn btn-outline-info">
+              <input type="radio" name="q8" value="10" onclick="culcq8()">はい
+            </label>
+          </div>
+          <div class="col-md-3 col-sm-3 col-5">
+            <label class="btn btn-outline-info">
+              <input type="radio" name="q8" value="0" onclick="culcq8()">いいえ
+            </label>
+          </div>
+          <div class="offset-md-3 offset-sm-3 offset-1"></div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button onclick="back8()" class="btn">1つ前に戻る</button>
+      </div>
+      <div class="page">
+        <p>8/9</p>
+      </div>
+    </div>
+
+    <!--質問9-->
+    <div id="question9" class="mitumori">
+      <div class="img">
+        <img src="../images/f_f_business_29_s512_f_business_29_1nbg.png" alt="" width="180px" height="120px">
+      </div>
+      <h2>9.アプリの概要を教えてください。</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 offset-md-2 col-sm-2 offset-sm-2 col-5 offset-1">
+            <label class="btn btn-outline-info">
+              <input type="radio" name="q9" value="20" onclick="culcq9()">出品販売系(<br>個人間の販売<br>,コンテンツ<br>販売など)
+            </label>
+          </div>
+          <div class="col-md-2 offset-md-1 col-sm-2 offset-sm-1 col-5 offset-0">
+            <label class="btn btn-outline-info">
+              <input type="radio" name="q9" value="30" onclick="culcq9()">マッチング系<br>(求人、恋愛<br>など)
+            </label>
+          </div>
+          <div class="offset-md-0 offset-sm-0 offset-1"></div>
+          <div class="col-md-2 offset-md-1 col-sm-2 offset-sm-1 col-5 offset-1">
+            <label class="btn btn-outline-info">
+              <input type="radio" name="q9" value="30" onclick="culcq9()">SNS系(<br>Twitter<br>,Yahoo知<br>恵袋,YouT<br>ubeなど)
+            </label>
+          </div>
+          <div class="offset-md-2 offset-sm-3 offset-6"></div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button onclick="back9()" class="btn">1つ前に戻る</button>
+      </div>
+      <div class="page">
+        <p>9/9</p>
       </div>
     </div>
 
@@ -264,6 +422,8 @@
       <p id="q5write">0</p>
       <p id="q6write">0</p>
       <p id="q7write">0</p>
+      <p id="q8write">0</p>
+      <p id="q9write">0</p>
       <p id="sum" name="sum">0</p>
     </div>
 

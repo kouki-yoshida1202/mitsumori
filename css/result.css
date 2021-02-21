@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 body h1 {
+  font-family: 'Noto Sans JP', sans-serif;
   letter-spacing: 5px;
   font-size: 30px;
   font-weight: bold;
@@ -8,10 +14,13 @@ body h1 {
 h1 span {
   border-bottom: 2px solid black;
 }
+div.contentA, div.contentB {
+  font-family: 'Noto Sans JP', sans-serif;
+}
 
 div.contentA div.col-md-4 {
   letter-spacing: 3px;
-  font-size: 30px;
+  font-size: 10px;
   width: 200px;
   height: 120px;
   margin-top: 50px;
@@ -23,10 +32,14 @@ div.contentA div.col-md-4 span#resultText {
   letter-spacing: 3px;
   font-size: 15px;
 }
+div.contentA div.col-md-4 span#result {
+  font-size: 45px;
+  color: red;
+}
 
 div.contentA div.col-sm-4 {
   letter-spacing: 3px;
-  font-size: 30px;
+  font-size: 15px;
   width: 200px;
   height: 120px;
   margin-top: 50px;
@@ -37,8 +50,12 @@ div.contentA div.col-sm-4 {
 div.contentA div.col-sm-4 span#resultText {
   font-size: 15px;
 }
-div.contentA div.col-4 {
-  font-size: 30px;
+div.contentA div.col-sm-4 span#result {
+  font-size: 45px;
+  color: red;
+}
+div.contentA div.col-8 {
+  font-size: 15px;
   width: 200px;
   height: 120px;
   margin-top: 50px;
@@ -47,54 +64,80 @@ div.contentA div.col-4 {
   border:3px double #F55427;
   text-align: center;
 }
-div.contentA div.col-4 span#resultText {
+div.contentA div.col-8 span#resultText {
   font-size: 15px;
 }
+div.contentA div.col-8 span#result {
+  font-size: 45px;
+  color: red;
+}
+
+div.contentB div.col-md-6 p,
+div.contentB div.col-sm-6 p {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+div.contentB div.col-md-6 div.info,
+div.contentB div.col-sm-6 div.info {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
 
 @media screen and (max-width: 510px) {
 
   body h1 {
     font-size: 25px;
   }
-  div.contentA div.col-4 {
-    font-size: 20px;
-    height: 100px;
+  div.contentA div.col-8 {
+    font-size: 15px;
+    height: 90px;
+    width:200px;
   }
-  div.contentA div.col-4 span#resultText {
+  div.contentA div.col-8 span#resultText {
     font-size: 8px;
   }
+  div.contentA div.col-8 span#result {
+    font-size: 25px;
+    color: red;
+  }
 
 }
 
-div.contentB div.col-md-4 {
+div.contentC button {
+  font-weight: bold;
+}
+
+div.contentC div.col-md-4 {
   text-align: center;
 }
-div.contentB div.col-sm-4 {
+div.contentC div.col-sm-4 {
   text-align: center;
 }
-div.contentB div.col-4 {
+div.contentC div.col-4 {
   text-align: center;
 }
 
 @media screen and (max-width: 768px) {
 
-  div.contentB div.col-sm-4 button {
+  div.contentC div.col-sm-4 button {
     padding:8px 14px;
     w
   }
-  div.contentB div.col-sm-4 button a {
+  div.contentC div.col-sm-4 button a {
     font-size: 10px;
   }
 }
 
-div.contentB button {
+div.contentC button {
   background-color: #16406b;
   border: 1px solid #16406b;
   border-radius: 40px;
   padding:16px 28px;
   margin-top: 50px;
 }
-div.contentB button a {
+div.contentC button a {
   color: white;
   font-weight: bold;
   font-size: 13px;

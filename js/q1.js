@@ -5,6 +5,8 @@ var sum4 = 0;
 var sum5 = 0;
 var sum6 = 0;
 var sum7 = 0;
+var sum8 = 0;
+var sum9 = 0;
 let total = 0;
 
 function start() {
@@ -168,6 +170,7 @@ function culcq6() {
   sum();
 }
 
+
 function culcq7() {
   var elements = document.getElementsByName("q7");
 
@@ -180,16 +183,73 @@ function culcq7() {
     }
   }
 
+  newstyle = document.createElement("style");
+  newstyle.type="text/css";
+  newstyle.innerText = '#question8{opacity:0} #question8{animation-name: fadeIn} #question8{animation-duration:2s} #question8{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
+  document.getElementsByTagName("body").item(0).appendChild(newstyle);
+
+  document.getElementById("question7").style.display = "none";
+  document.getElementById("question8").style.display = "block";
   document.getElementById("q7write").innerHTML = q7;
 
   sum7 = +Number(q7);
   sum();
+}
+
+
+
+
+function culcq8() {
+  var elements = document.getElementsByName("q8");
+
+  var q8 = "";
+
+  for (var i = 0; i < elements.length; i++) {
+    if (elements[i].checked) {
+      var q8 = elements[i].value;
+      break;
+    }
+  }
+
+  newstyle = document.createElement("style");
+  newstyle.type="text/css";
+  newstyle.innerText = '#question9{opacity:0} #question9{animation-name: fadeIn} #question9{animation-duration:2s} #question9{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
+  document.getElementsByTagName("body").item(0).appendChild(newstyle);
+
+  document.getElementById("question8").style.display = "none";
+  document.getElementById("question9").style.display = "block";
+  document.getElementById("q8write").innerHTML = q8;
+
+  sum8 = +Number(q8);
+  sum();
+}
+
+
+function culcq9() {
+  var elements = document.getElementsByName("q9");
+
+  var q9 = "";
+
+  for (var i = 0; i < elements.length; i++) {
+    if (elements[i].checked) {
+      var q9 = elements[i].value;
+      break;
+    }
+  }
+
+  document.getElementById("q9write").innerHTML = q9;
+
+  sum9 = +Number(q9);
+  sum();
   location.href = "../html/result.html?total=" + total;
 }
 
+
+
+
 function sum() {
-  console.log(sum1, sum2, sum3, sum4, sum5, sum6, sum7);
-  total = sum1 + sum2 + sum3 + sum4 + sum5 + sum6 + sum7;
+  console.log(sum1, sum2, sum3, sum4, sum5, sum6, sum7, sum8, sum9);
+  total = sum1 + sum2 + sum3 + sum4 + sum5 + sum6 + sum7 + sum8 + sum9;
   document.getElementById("sum").innerHTML = total;
 }
 
@@ -201,7 +261,7 @@ function back2() {
   //金額のリセット
   sum1 = 0;
   document.getElementById("q1write").innerHTML = 0;
-  total = sum2 + sum3 + sum4 + sum5 + sum6 + sum7;
+  total = sum2 + sum3 + sum4 + sum5 + sum6 + sum7 + sum8 + sum9;
   document.getElementById("sum").innerHTML = total;
 
   for(element of document.getElementsByName("q1")) {
@@ -216,7 +276,7 @@ function back3() {
 
   sum2 = 0;
   document.getElementById("q2write").innerHTML = 0;
-  total = sum1 + sum3 + sum4 + sum5 + sum6 + sum7;
+  total = sum1 + sum3 + sum4 + sum5 + sum6 + sum7 + sum8 + sum9;
   document.getElementById("sum").innerHTML = total;
 
   for(element of document.getElementsByName("q2")) {
@@ -230,7 +290,7 @@ function back4() {
 
   sum3 = 0;
   document.getElementById("q3write").innerHTML = 0;
-  total = sum1 + sum2 + sum4 + sum5 + sum6 + sum7;
+  total = sum1 + sum2 + sum4 + sum5 + sum6 + sum7 + sum8 + sum9;
   document.getElementById("sum").innerHTML = total;
 
   for(element of document.getElementsByName("q3")) {
@@ -244,7 +304,7 @@ function back5() {
 
   sum4 = 0;
   document.getElementById("q4write").innerHTML = 0;
-  total = sum1 + sum2 + sum3 + sum5 + sum6 + sum7;
+  total = sum1 + sum2 + sum3 + sum5 + sum6 + sum7 + sum8 + sum9;
   document.getElementById("sum").innerHTML = total;
 
   for(element of document.getElementsByName("q4")) {
@@ -258,7 +318,7 @@ function back6() {
 
   sum5 = 0;
   document.getElementById("q5write").innerHTML = 0;
-  total = sum1 + sum2 + sum3 + sum4 + sum6 + sum7;
+  total = sum1 + sum2 + sum3 + sum4 + sum6 + sum7 + sum8 + sum9;
   document.getElementById("sum").innerHTML = total;
 
   for(element of document.getElementsByName("q5")) {
@@ -272,10 +332,40 @@ function back7() {
 
   sum6 = 0;
   document.getElementById("q6write").innerHTML = 0;
-  total = sum1 + sum2 + sum3 + sum4 + sum5 + sum7;
+  total = sum1 + sum2 + sum3 + sum4 + sum5 + sum7 + sum8 + sum9;
   document.getElementById("sum").innerHTML = total;
 
   for(element of document.getElementsByName("q6")) {
+    element.checked = false;
+  }
+}
+
+function back8() {
+
+  document.getElementById("question7").style.display = "block";
+  document.getElementById("question8").style.display = "none";
+
+  sum7 = 0;
+  document.getElementById("q7write").innerHTML = 0;
+  total = sum1 + sum2 + sum3 + sum4 + sum5 + sum6 + sum8 + sum9;
+  document.getElementById("sum").innerHTML = total;
+
+  for(element of document.getElementsByName("q7")) {
+    element.checked = false;
+  }
+}
+
+function back9() {
+
+  document.getElementById("question8").style.display = "block";
+  document.getElementById("question9").style.display = "none";
+
+  sum8 = 0;
+  document.getElementById("q8write").innerHTML = 0;
+  total = sum1 + sum2 + sum3 + sum4 + sum5 + sum6 + sum7 + sum9;
+  document.getElementById("sum").innerHTML = total;
+
+  for(element of document.getElementsByName("q8")) {
     element.checked = false;
   }
 }
