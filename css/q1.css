@@ -1,25 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap");
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif !important;
 }
-div#start {
-  font-family: 'Noto Sans JP', sans-serif;
-}
+/* div#start {
+  font-family: "Noto Sans JP", sans-serif !important;
+} */
 
 div#start.text-center {
-  background-color: #FAD220;
+  background-color: #fad220;
   margin: 0px 0px 0px 0px;
-
 }
 #start h1 {
-  font-family: 'Noto Sans JP', sans-serif;
+  /* font-family: "Noto Sans JP", sans-serif;
   padding-bottom: 200px;
-  margin: 0px;
+  margin: 0px; */
   text-align: left;
 }
 #start div.col-md-10 p.main {
   margin: 0 0 0 0;
-  padding-top: 100px;
+  /* padding-top: 100px; */
   font-size: 48px;
   text-align: left;
 }
@@ -28,11 +28,10 @@ div#start.text-center {
   right: 100px;
   top: 330px;
 }
-#start div.col-md-10 p.sub {
+#start .sub {
   margin-top: 10px;
   font-size: 18px;
   text-align: left;
-
 }
 #start div.container div.row div.col-md-10 {
   padding: 0px 0px;
@@ -53,24 +52,24 @@ div#start.text-center {
   padding-bottom: 3px;
 }
 #start button.btn:hover {
-  background-color: #F55427;
+  background-color: #f55427;
 }
 div.mitumori div.img {
   text-align: center;
-  margin:100px 0 10px 0;
+  margin: 100px 0 10px 0;
 }
 div.mitumori h2 {
   text-align: center;
   padding: 30px 20px;
-  margin:10px 0px 50px 0px;
+  margin: 10px 0px 50px 0px;
 }
 div.text-center {
   margin: 30px 0px 0px 0px;
 }
 div.text-center button.btn {
-  background-color: #394E8A;
+  background-color: #394e8a;
   color: white;
-  border: 2px solid #394E8A;
+  border: 2px solid #394e8a;
 }
 div.text-center button.btn:hover {
   background-color: white;
@@ -91,9 +90,33 @@ ul li {
   border: 1px solid red;
 }
 */
+@media screen and (min-width: 480px) {
+  /*　画面サイズが480px以上の場合ここの記述が適用される　*/
+  .main-left {
+    padding-left: 17% !important;
+  }
+  .main-right {
+    padding-right: 17% !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  /*　画面サイズが480px以下の場合ここの記述が適用される　*/
+  .main,
+  .sub {
+    line-height: 1.3 !important;
+  }
+  .main {
+    font-size: 2em;
+  }
+
+  .main-left,
+  .main-right {
+    padding: 1% 5% !important;
+  }
+}
 .mitumori {
   display: none;
-  font-family: 'Noto Sans JP', sans-serif;
+  /* font-family: "Noto Sans JP", sans-serif !important; */
   font-weight: bold;
 }
 div.mitumori div.page p {
@@ -101,8 +124,6 @@ div.mitumori div.page p {
   position: absolute;
   top: 20px;
   right: 20px;
-}
-
 }
 div.container {
   text-align: center;
@@ -116,7 +137,7 @@ label {
   text-align: center;
 }
 label.btn {
-  border: 3px solid #17A2B8;
+  border: 3px solid #17a2b8;
   font-size: 14px;
 }
 label.btn img {
@@ -125,7 +146,7 @@ label.btn img {
 input {
   opacity: 0;
   width: 0px;
-  height:0px;
+  height: 0px;
 }
 #total {
   display: none;
@@ -133,7 +154,7 @@ input {
 
 footer {
   text-align: center;
-  background-color: #61615F;
+  background-color: #61615f;
   padding: 20px 0px;
 }
 
@@ -148,10 +169,10 @@ footer {
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   #start h1 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 20%;
+    /* padding-bottom: 100px; */
   }
   #start div.container div.row div.col-sm-10 p.main {
     padding-top: 30px;
@@ -169,17 +190,17 @@ footer {
     height: 150px;
   }
   div.col-xs-2 label.btn:hover {
-    background-color: #17A2B8;
+    background-color: #17a2b8;
   }
   div.text-center button.btn {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
   div.mitumori {
     margin-bottom: 50px;
   }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
   #start div.container div.row div.col-8 p.main {
     text-align: center;
     font-size: 20px;
@@ -189,9 +210,7 @@ footer {
   }
 }
 
-
-@media screen and (max-width:350px) {
-
+@media screen and (max-width: 350px) {
   label {
     width: 100px;
     height: 130px;
