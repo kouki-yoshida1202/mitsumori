@@ -139,10 +139,18 @@ label {
 label.btn {
   border: 3px solid #17a2b8;
   font-size: 14px;
+  display: table-cell;
+  vertical-align: middle;
 }
+/*
 label.btn div.text {
   height: 50%;
 }
+label.btn div.center {
+  height: 100%;
+  line-height: 182px;
+}
+*/
 input {
   opacity: 0;
   width: 0px;
