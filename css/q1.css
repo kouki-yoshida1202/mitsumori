@@ -139,8 +139,13 @@ label {
 label.btn {
   border: 3px solid #17a2b8;
   font-size: 14px;
-  display: table-cell;
-  vertical-align: middle;
+}
+label.btn div.icon {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
 }
 /*
 label.btn div.text {
