@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Noto Sans JP", sans-serif !important;
 }
@@ -7,7 +12,7 @@ body {
 body h1 {
   font-family: "Noto Sans JP", sans-serif;
   letter-spacing: 5px;
-  font-size: 30px;
+  font-size: 3.0rem;
   font-weight: bold;
   text-align: center;
   margin: 50px 0px 50px 0px;
@@ -25,7 +30,7 @@ div.contentB {
 div.contentA div.col-md-4,
 div.contentA div.col-sm-4 {
   letter-spacing: 3px;
-  font-size: 10px;
+  font-size: 1.0rem;
   width: 200px;
   height: 120px;
   margin-top: 50px;
@@ -34,7 +39,7 @@ div.contentA div.col-sm-4 {
   text-align: center;
 }
 div.contentA div.col-8 {
-  font-size: 15px;
+  font-size: 1.5rem;
   width: 200px;
   height: 120px;
   margin-top: 50px;
@@ -45,28 +50,35 @@ div.contentA div.col-8 {
 }
 div.contentA div.col-md-4 span#resultText {
   letter-spacing: 3px;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 div.contentA div.col-sm-4 span#resultText,
 div.contentA div.col-8 span#resultText {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 div.contentA div.col-md-4 span#result,
 div.contentA div.col-sm-4 span#result,
 div.contentA div.col-8 span#result {
-  font-size: 45px;
+  font-size: 4.5rem;
   color: red;
 }
 div.contentB div.col-md-6 p,
 div.contentB div.col-sm-6 p {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 2px;
 }
 div.contentB div.col-md-6 div.info,
 div.contentB div.col-sm-6 div.info {
-  font-size: 14px;
+  font-size: 1.4rem;
   letter-spacing: 2px;
+}
+
+div.contentB button {
+  font-size: 1.6rem;
+}
+div.contentB div.col-lg-4 {
+  text-align: center;
 }
 
 /*  ボタン  */
@@ -100,21 +112,36 @@ div.contentC button a {
   }
 }
 
+@media screen and (max-width: 576px) {
+  div.contentB div.col-8 {
+    margin-top: 10px;
+  }
+  div.contentB div.col-10 {
+    margin-top:20px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  div.contentB div.col-8 {
+    margin-top: 0px;
+  }
+}
+
 /*  スマホ対応  */
 @media screen and (max-width: 510px) {
   body h1 {
-    font-size: 25px;
+    font-size: 2.0rem;
   }
   div.contentA div.col-8 {
-    font-size: 15px;
+    font-size: 1.5rem;
     height: 90px;
     width: 200px;
   }
   div.contentA div.col-8 span#resultText {
-    font-size: 8px;
+    font-size: 1.5rem;
   }
   div.contentA div.col-8 span#result {
-    font-size: 25px;
+    font-size: 3.0rem;
     color: red;
   }
 }
