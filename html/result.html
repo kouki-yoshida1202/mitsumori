@@ -1,3 +1,66 @@
+<?php
+mb_language("Japanese");
+mb_internal_encoding("UTF-8");
+
+if ($_SERVER['REQUEST_METHOD'] != 'POST') {
+    // POSTでのアクセスでない場合
+    $name = '';
+    $email = '';
+    $message = '';
+    $err_msg = '';
+    $complete_msg = '';
+
+} else {
+    // フォームがサブミットされた場合（POST処理）
+    // 入力された値を取得する
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $price = $_POST['price'];
+    $message = $_POST['message'];
+
+    // エラーメッセージ・完了メッセージの用意
+    $err_msg = '';
+    $complete_msg = '';
+
+    // 空チェック
+    if ($name == '' || $email == '') {
+        $err_msg = '必須項目を入力してください。';
+    }
+
+    // エラーなし（全ての項目が入力されている）
+    if ($err_msg == '') {
+        $to = $email; 
+        
+        $headers = "From: contact@gonmura.info";
+        $headers .= "\r\n";
+        $headers .= "Bcc: contact@gonmura.info";
+        $headers .= "\r\n";
+
+        // 本文の最後に名前を追加
+        
+        $subject = "【Gonmura】見積もり依頼が完了しました。";
+        $content = "\r\n見積もり依頼を送信しました。\r\n1営業日以内に担当からご連絡させて頂きます。
+\r\n\r\n============================================================\r\n
+見積もり概算金額 : " . $price . "万円\r\n
+法人名または個人名 : " . $name . "\r\n
+メールアドレス : " . $email . "\r\n
+問い合わせ内容 : " . $message . "\r\n
+\r\n\r\n============================================================\r\n\r\n───────────────────────────────────\r\n\r\n見積もりシミュレーション by.Gonmura合同会社\r\n\r\n───────────────────────────────────\r\n";
+        // メール送信
+        mb_send_mail($to, $subject, $content, $headers);
+
+        // 完了メッセージ
+        $complete_msg = '送信されました！またお客様に確認メールも送信しておりますので、合わせてご確認くださいませ。<br>※もし届いていない場合は、迷惑メールフォルダに届いているか、contact@gonmura.infoのメールアドレスの受信許可設定をお願いします。';
+
+        // 全てクリア
+        $name = '';
+        $email = '';
+        $message = '';
+    }
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
   <head>
@@ -74,16 +137,28 @@
               概算見積もり結果に表示される金額はあくまで目安となります。
               正確に見積もりをご希望の方は下記フォームからお問い合わせくださいませ。
             </div>
+            <?php if ($err_msg != ''): ?>
+            <div class="alert alert-danger">
+              <?php echo $err_msg; ?>
+            </div>
+            <?php endif; ?>
+            
+            <?php if ($complete_msg != ''): ?>
+            <div class="alert alert-success">
+              <?php echo $complete_msg; ?>
+            </div>
+            <?php endif; ?>
             <form method="post">
               <div class="form-group">
-                <input type="text" class="form-control" name="name" placeholder="法人名または個人名(必須)" value="" required/>
+                <input type="text" class="form-control" name="name" placeholder="法人名または個人名(必須)" value="<?php echo $name; ?>" />
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="email" placeholder="メールアドレス(必須)" value="" required/>
+                <input type="text" class="form-control" name="email" placeholder="メールアドレス(必須)" value="<?php echo $email; ?>" />
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="7" placeholder="問い合わせ内容(任意)"></textarea>
+                <textarea class="form-control" name="message" rows="7" placeholder="問い合わせ内容"><?php echo $message; ?></textarea>
               </div>
+              <input id="priceHidden"type="text" class="form-control" name="price" hidden/>
               <button type="submit" class="btn btn-info btn-block" style="padding-top:1.5rem;padding-bottom:1.5rem;">
                 送信
               </button>
