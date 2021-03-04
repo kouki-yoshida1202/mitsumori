@@ -12,13 +12,14 @@ body {
 body h1 {
   font-family: "Noto Sans JP", sans-serif;
   letter-spacing: 5px;
-  font-size: 3.0rem;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin: 50px 0px 50px 0px;
 }
 h1 span {
   border-bottom: 2px solid black;
+  padding-bottom: 10px;
 }
 
 /*  最後のページ_本文  */
@@ -30,7 +31,7 @@ div.contentB {
 div.contentA div.col-md-4,
 div.contentA div.col-sm-4 {
   letter-spacing: 3px;
-  font-size: 1.0rem;
+  font-size: 1rem;
   width: 200px;
   height: 120px;
   margin-top: 50px;
@@ -44,7 +45,7 @@ div.contentA div.col-8 {
   height: 120px;
   margin-top: 50px;
   margin-bottom: 50px;
-  padding: 5px 10px;
+  padding: 15px 10px;
   border: 3px double #f55427;
   text-align: center;
 }
@@ -72,6 +73,12 @@ div.contentB div.col-md-6 div.info,
 div.contentB div.col-sm-6 div.info {
   font-size: 1.4rem;
   letter-spacing: 2px;
+}
+form input,
+form textarea {
+  font-size: 1.4rem !important;
+  letter-spacing: 2px;
+  padding: 2rem 1rem !important;
 }
 
 div.contentB button {
@@ -117,7 +124,7 @@ div.contentC button a {
     margin-top: 10px;
   }
   div.contentB div.col-10 {
-    margin-top:20px;
+    margin-top: 20px;
   }
 }
 
@@ -130,7 +137,7 @@ div.contentC button a {
 /*  スマホ対応  */
 @media screen and (max-width: 510px) {
   body h1 {
-    font-size: 2.0rem;
+    font-size: 2rem;
   }
   div.contentA div.col-8 {
     font-size: 1.5rem;
@@ -141,7 +148,7 @@ div.contentC button a {
     font-size: 1.5rem;
   }
   div.contentA div.col-8 span#result {
-    font-size: 3.0rem;
+    font-size: 3rem;
     color: red;
   }
 }
