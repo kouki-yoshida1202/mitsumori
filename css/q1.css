@@ -5,6 +5,15 @@ html {
   font-size: 62.5%;
 }
 
+.select {
+  margin-bottom: 0px;
+  display: contents;
+  word-break: break-all;
+}
+.text {
+  word-break: break-all;
+}
+
 body {
   font-family: "Noto Sans JP", sans-serif !important;
 }
@@ -24,7 +33,7 @@ div#start.text-center {
   padding-bottom: 200px;
   margin: 0px; */
   text-align: left;
-  font-size: 4.0rem;
+  font-size: 4rem;
 }
 #start h4 {
   font-size: 1.8rem;
@@ -121,7 +130,7 @@ div.mitumori h2 {
 
 /*  ページ番号  */
 div.mitumori div.page p {
-  font-size: 2.0rem;
+  font-size: 2rem;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -140,14 +149,13 @@ label {
 label.btn {
   border: 3px solid #17a2b8;
   font-size: 1.4rem;
-
 }
 label.btn div.icon {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-  -webkit- transform: translateY(-50%) translateX(-50%);
+  /* -webkit- transform: translateY(-50%) translateX(-50%); */
 }
 /*
 label.btn div.text {
@@ -175,12 +183,12 @@ footer {
 
 /*スマホ対応*/
 @media screen and (max-width: 992px) {
-html {
-  font-size: 50%;
-}
+  html {
+    font-size: 50%;
+  }
 
   label.btn {
-  /*  font-size: 7px; */
+    /*  font-size: 7px; */
   }
   label {
     width: 100px;
@@ -201,7 +209,7 @@ html {
     /* font-size: 15px; */
   }
   #start div.container div.row div.mitumori h2 {
-  /*  font-size: 20px; */
+    /*  font-size: 20px; */
     margin: 70px 0px 30px 0px;
   }
   label {

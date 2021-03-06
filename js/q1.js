@@ -8,34 +8,58 @@ var sum7 = 0;
 var sum8 = 0;
 var sum9 = 0;
 let total = 0;
+var answer1;
+var answer2;
+var answer3;
+var answer4;
+var answer5;
+var answer6;
+var answer7;
+var answer8;
+var answer9;
+var text1 = $("#question1 > h2").text();
+var text2 = $("#question2 > h2").text();
+var text3 = $("#question3 > h2").text();
+var text4 = $("#question4 > h2").text();
+var text5 = $("#question5 > h2").text();
+var text6 = $("#question6 > h2").text();
+var text7 = $("#question7 > h2").text();
+var text8 = $("#question8 > h2").text();
+var text9 = $("#question9 > h2").text();
 
 function start() {
   var newstyle = document.createElement("style");
-  newstyle.type="text/css";
-  newstyle.innerText = '#question1, #total{opacity:0} #question1, #total{animation-name: fadeIn} #question1, #total{animation-duration:2s} #question1, #total{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
-  document.getElementsByTagName("body").item(0).appendChild(newstyle);
+  newstyle.type = "text/css";
+  newstyle.innerText =
+    "#question1, #total{opacity:0} #question1, #total{animation-name: fadeIn} #question1, #total{animation-duration:2s} #question1, #total{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ";
+  document
+    .getElementsByTagName("body")
+    .item(0)
+    .appendChild(newstyle);
   document.getElementById("start").style.display = "none";
   document.getElementById("question1").style.display = "block";
   document.getElementById("sum").style.display = "block";
-
 }
 
 function culcq1() {
   var elements = document.getElementsByName("q1");
-
   var q1 = "";
-
   for (var i = 0; i < elements.length; i++) {
     if (elements[i].checked) {
+      answer1 = elements[i].parentNode.innerText.replace(/\n/g, "");
       var q1 = elements[i].value;
       break;
     }
   }
 
   newstyle = document.createElement("style");
-  newstyle.type="text/css";
-  newstyle.innerText = '#question2{opacity:0} #question2{animation-name: fadeIn} #question2{animation-duration:2s} #question2{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
-  document.getElementsByTagName("body").item(0).appendChild(newstyle);
+  newstyle.type = "text/css";
+  newstyle.innerText =
+    "#question2{opacity:0} #question2{animation-name: fadeIn} #question2{animation-duration:2s} #question2{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ";
+  document
+    .getElementsByTagName("body")
+    .item(0)
+    .appendChild(newstyle);
 
   document.getElementById("question1").style.display = "none";
   document.getElementById("question2").style.display = "block";
@@ -52,15 +76,20 @@ function culcq2() {
 
   for (var i = 0; i < elements.length; i++) {
     if (elements[i].checked) {
+      answer2 = elements[i].parentNode.innerText.replace(/\n/g, "");
       var q2 = elements[i].value;
       break;
     }
   }
 
   newstyle = document.createElement("style");
-  newstyle.type="text/css";
-  newstyle.innerText = '#question3{opacity:0} #question3{animation-name: fadeIn} #question3{animation-duration:2s} #question3{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
-  document.getElementsByTagName("body").item(0).appendChild(newstyle);
+  newstyle.type = "text/css";
+  newstyle.innerText =
+    "#question3{opacity:0} #question3{animation-name: fadeIn} #question3{animation-duration:2s} #question3{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ";
+  document
+    .getElementsByTagName("body")
+    .item(0)
+    .appendChild(newstyle);
 
   document.getElementById("question2").style.display = "none";
   document.getElementById("question3").style.display = "block";
@@ -77,15 +106,20 @@ function culcq3() {
 
   for (var i = 0; i < elements.length; i++) {
     if (elements[i].checked) {
+      answer3 = elements[i].parentNode.innerText.replace(/\n/g, "");
       var q3 = elements[i].value;
       break;
     }
   }
 
   newstyle = document.createElement("style");
-  newstyle.type="text/css";
-  newstyle.innerText = '#question4, {opacity:0} #question4 {animation-name: fadeIn} #question4 {animation-duration:2s} #question4 {animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
-  document.getElementsByTagName("body").item(0).appendChild(newstyle);
+  newstyle.type = "text/css";
+  newstyle.innerText =
+    "#question4, {opacity:0} #question4 {animation-name: fadeIn} #question4 {animation-duration:2s} #question4 {animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ";
+  document
+    .getElementsByTagName("body")
+    .item(0)
+    .appendChild(newstyle);
 
   document.getElementById("question3").style.display = "none";
   document.getElementById("question4").style.display = "block";
@@ -102,15 +136,20 @@ function culcq4() {
 
   for (var i = 0; i < elements.length; i++) {
     if (elements[i].checked) {
+      answer4 = elements[i].parentNode.innerText.replace(/\n/g, "");
       var q4 = elements[i].value;
       break;
     }
   }
 
   newstyle = document.createElement("style");
-  newstyle.type="text/css";
-  newstyle.innerText = '#question5 {opacity:0} #question5 {animation-name: fadeIn} #question5 {animation-duration:2s} #question5 {animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
-  document.getElementsByTagName("body").item(0).appendChild(newstyle);
+  newstyle.type = "text/css";
+  newstyle.innerText =
+    "#question5 {opacity:0} #question5 {animation-name: fadeIn} #question5 {animation-duration:2s} #question5 {animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ";
+  document
+    .getElementsByTagName("body")
+    .item(0)
+    .appendChild(newstyle);
 
   document.getElementById("question4").style.display = "none";
   document.getElementById("question5").style.display = "block";
@@ -127,15 +166,20 @@ function culcq5() {
 
   for (var i = 0; i < elements.length; i++) {
     if (elements[i].checked) {
+      answer5 = elements[i].parentNode.innerText.replace(/\n/g, "");
       var q5 = elements[i].value;
       break;
     }
   }
 
   newstyle = document.createElement("style");
-  newstyle.type="text/css";
-  newstyle.innerText = '#question6 {opacity:0} #question6 {animation-name: fadeIn} #question6 {animation-duration:2s} #question6 {animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
-  document.getElementsByTagName("body").item(0).appendChild(newstyle);
+  newstyle.type = "text/css";
+  newstyle.innerText =
+    "#question6 {opacity:0} #question6 {animation-name: fadeIn} #question6 {animation-duration:2s} #question6 {animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ";
+  document
+    .getElementsByTagName("body")
+    .item(0)
+    .appendChild(newstyle);
 
   document.getElementById("question5").style.display = "none";
   document.getElementById("question6").style.display = "block";
@@ -152,15 +196,20 @@ function culcq6() {
 
   for (var i = 0; i < elements.length; i++) {
     if (elements[i].checked) {
+      answer6 = elements[i].parentNode.innerText.replace(/\n/g, "");
       var q6 = elements[i].value;
       break;
     }
   }
 
   newstyle = document.createElement("style");
-  newstyle.type="text/css";
-  newstyle.innerText = '#question7{opacity:0} #question7{animation-name: fadeIn} #question7{animation-duration:2s} #question7{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
-  document.getElementsByTagName("body").item(0).appendChild(newstyle);
+  newstyle.type = "text/css";
+  newstyle.innerText =
+    "#question7{opacity:0} #question7{animation-name: fadeIn} #question7{animation-duration:2s} #question7{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ";
+  document
+    .getElementsByTagName("body")
+    .item(0)
+    .appendChild(newstyle);
 
   document.getElementById("question6").style.display = "none";
   document.getElementById("question7").style.display = "block";
@@ -170,7 +219,6 @@ function culcq6() {
   sum();
 }
 
-
 function culcq7() {
   var elements = document.getElementsByName("q7");
 
@@ -178,15 +226,20 @@ function culcq7() {
 
   for (var i = 0; i < elements.length; i++) {
     if (elements[i].checked) {
+      answer7 = elements[i].parentNode.innerText.replace(/\n/g, "");
       var q7 = elements[i].value;
       break;
     }
   }
 
   newstyle = document.createElement("style");
-  newstyle.type="text/css";
-  newstyle.innerText = '#question8{opacity:0} #question8{animation-name: fadeIn} #question8{animation-duration:2s} #question8{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
-  document.getElementsByTagName("body").item(0).appendChild(newstyle);
+  newstyle.type = "text/css";
+  newstyle.innerText =
+    "#question8{opacity:0} #question8{animation-name: fadeIn} #question8{animation-duration:2s} #question8{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ";
+  document
+    .getElementsByTagName("body")
+    .item(0)
+    .appendChild(newstyle);
 
   document.getElementById("question7").style.display = "none";
   document.getElementById("question8").style.display = "block";
@@ -196,9 +249,6 @@ function culcq7() {
   sum();
 }
 
-
-
-
 function culcq8() {
   var elements = document.getElementsByName("q8");
 
@@ -206,15 +256,20 @@ function culcq8() {
 
   for (var i = 0; i < elements.length; i++) {
     if (elements[i].checked) {
+      answer8 = elements[i].parentNode.innerText.replace(/\n/g, "");
       var q8 = elements[i].value;
       break;
     }
   }
 
   newstyle = document.createElement("style");
-  newstyle.type="text/css";
-  newstyle.innerText = '#question9{opacity:0} #question9{animation-name: fadeIn} #question9{animation-duration:2s} #question9{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ';
-  document.getElementsByTagName("body").item(0).appendChild(newstyle);
+  newstyle.type = "text/css";
+  newstyle.innerText =
+    "#question9{opacity:0} #question9{animation-name: fadeIn} #question9{animation-duration:2s} #question9{animation-fill-mode: forwards} @keyframes fadeIn { from{opacity:0} to{opacity:1}  } ";
+  document
+    .getElementsByTagName("body")
+    .item(0)
+    .appendChild(newstyle);
 
   document.getElementById("question8").style.display = "none";
   document.getElementById("question9").style.display = "block";
@@ -224,7 +279,6 @@ function culcq8() {
   sum();
 }
 
-
 function culcq9() {
   var elements = document.getElementsByName("q9");
 
@@ -232,6 +286,7 @@ function culcq9() {
 
   for (var i = 0; i < elements.length; i++) {
     if (elements[i].checked) {
+      answer9 = elements[i].parentNode.innerText.replace(/\n/g, "");
       var q9 = elements[i].value;
       break;
     }
@@ -241,11 +296,64 @@ function culcq9() {
 
   sum9 = +Number(q9);
   sum();
-  location.href = "../html/result.html?total=" + total;
+  location.href =
+    "../html/result.html?total=" +
+    total +
+    "&sum1=" +
+    sum1 +
+    "&sum2=" +
+    sum2 +
+    "&sum3=" +
+    sum3 +
+    "&sum4=" +
+    sum4 +
+    "&sum5=" +
+    sum5 +
+    "&sum6=" +
+    sum6 +
+    "&sum7=" +
+    sum7 +
+    "&sum8=" +
+    sum8 +
+    "&sum9=" +
+    sum9 +
+    "&answer1=" +
+    answer1 +
+    "&answer2=" +
+    answer2 +
+    "&answer3=" +
+    answer3 +
+    "&answer4=" +
+    answer4 +
+    "&answer5=" +
+    answer5 +
+    "&answer6=" +
+    answer6 +
+    "&answer7=" +
+    answer7 +
+    "&answer8=" +
+    answer8 +
+    "&answer9=" +
+    answer9 +
+    "&text1=" +
+    text1 +
+    "&text2=" +
+    text2 +
+    "&text3=" +
+    text3 +
+    "&text4=" +
+    text4 +
+    "&text5=" +
+    text5 +
+    "&text6=" +
+    text6 +
+    "&text7=" +
+    text7 +
+    "&text8=" +
+    text8 +
+    "&text9=" +
+    text9;
 }
-
-
-
 
 function sum() {
   console.log(sum1, sum2, sum3, sum4, sum5, sum6, sum7, sum8, sum9);
@@ -264,13 +372,12 @@ function back2() {
   total = sum2 + sum3 + sum4 + sum5 + sum6 + sum7 + sum8 + sum9;
   document.getElementById("sum").innerHTML = total;
 
-  for(element of document.getElementsByName("q1")) {
+  for (element of document.getElementsByName("q1")) {
     element.checked = false;
   }
 }
 
 function back3() {
-
   document.getElementById("question2").style.display = "block";
   document.getElementById("question3").style.display = "none";
 
@@ -279,12 +386,11 @@ function back3() {
   total = sum1 + sum3 + sum4 + sum5 + sum6 + sum7 + sum8 + sum9;
   document.getElementById("sum").innerHTML = total;
 
-  for(element of document.getElementsByName("q2")) {
+  for (element of document.getElementsByName("q2")) {
     element.checked = false;
   }
 }
 function back4() {
-
   document.getElementById("question3").style.display = "block";
   document.getElementById("question4").style.display = "none";
 
@@ -293,12 +399,11 @@ function back4() {
   total = sum1 + sum2 + sum4 + sum5 + sum6 + sum7 + sum8 + sum9;
   document.getElementById("sum").innerHTML = total;
 
-  for(element of document.getElementsByName("q3")) {
+  for (element of document.getElementsByName("q3")) {
     element.checked = false;
   }
 }
 function back5() {
-
   document.getElementById("question4").style.display = "block";
   document.getElementById("question5").style.display = "none";
 
@@ -307,12 +412,11 @@ function back5() {
   total = sum1 + sum2 + sum3 + sum5 + sum6 + sum7 + sum8 + sum9;
   document.getElementById("sum").innerHTML = total;
 
-  for(element of document.getElementsByName("q4")) {
+  for (element of document.getElementsByName("q4")) {
     element.checked = false;
   }
 }
 function back6() {
-
   document.getElementById("question5").style.display = "block";
   document.getElementById("question6").style.display = "none";
 
@@ -321,12 +425,11 @@ function back6() {
   total = sum1 + sum2 + sum3 + sum4 + sum6 + sum7 + sum8 + sum9;
   document.getElementById("sum").innerHTML = total;
 
-  for(element of document.getElementsByName("q5")) {
+  for (element of document.getElementsByName("q5")) {
     element.checked = false;
   }
 }
 function back7() {
-
   document.getElementById("question6").style.display = "block";
   document.getElementById("question7").style.display = "none";
 
@@ -335,13 +438,12 @@ function back7() {
   total = sum1 + sum2 + sum3 + sum4 + sum5 + sum7 + sum8 + sum9;
   document.getElementById("sum").innerHTML = total;
 
-  for(element of document.getElementsByName("q6")) {
+  for (element of document.getElementsByName("q6")) {
     element.checked = false;
   }
 }
 
 function back8() {
-
   document.getElementById("question7").style.display = "block";
   document.getElementById("question8").style.display = "none";
 
@@ -350,13 +452,12 @@ function back8() {
   total = sum1 + sum2 + sum3 + sum4 + sum5 + sum6 + sum8 + sum9;
   document.getElementById("sum").innerHTML = total;
 
-  for(element of document.getElementsByName("q7")) {
+  for (element of document.getElementsByName("q7")) {
     element.checked = false;
   }
 }
 
 function back9() {
-
   document.getElementById("question8").style.display = "block";
   document.getElementById("question9").style.display = "none";
 
@@ -365,7 +466,7 @@ function back9() {
   total = sum1 + sum2 + sum3 + sum4 + sum5 + sum6 + sum7 + sum9;
   document.getElementById("sum").innerHTML = total;
 
-  for(element of document.getElementsByName("q8")) {
+  for (element of document.getElementsByName("q8")) {
     element.checked = false;
   }
 }
